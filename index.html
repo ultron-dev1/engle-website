@@ -2,118 +2,149 @@
 layout: default
 title: Home
 nav: home
-description: Englemount Real Estate Management Services provides conflict-free third-party real estate management and advisory services to investors, users, and owners of real estate.
+description: Englemount Real Estate Management Services — conflict-free third-party real estate management and advisory services for investors, users, and owners of commercial, industrial, and institutional property in Toronto and across Canada.
 ---
+
+<script>document.body.dataset.page = 'home';</script>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="container">
-    <div class="hero-grid">
-      <div>
-        <p class="eyebrow">Toronto · Property Management · Since 1995</p>
-        <h1>Property Management, <em>reimagined.</em></h1>
-        <p class="hero-sub">
-          Conflict-free third-party real estate management and advisory services for investors, users and owners of real estate. Founded on integrity, intelligence and insight.
-        </p>
-        <div class="hero-cta">
-          <a href="{{ '/services/' | relative_url }}" class="btn btn-primary">Explore Services →</a>
-          <a href="{{ '/contact/' | relative_url }}" class="btn btn-ghost">Get in Touch</a>
-        </div>
-      </div>
-      <div class="hero-img">
-        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1200&q=80&auto=format&fit=crop" alt="Modern commercial property" loading="eager" />
+  <div class="hero-image" style="background-image: url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=2400&q=85&auto=format&fit=crop')"></div>
+  <div class="hero-content">
+    <div class="container">
+      <p class="eyebrow">Property Management · Established Expertise</p>
+      <h1>Enhancing the value of <em>commercial real estate</em>—building by building.</h1>
+      <p class="hero-sub">
+        Englemount provides conflict-free, third-party real estate management and advisory services to investors, users and owners of commercial, industrial and institutional property.
+      </p>
+      <div class="hero-cta">
+        <a href="{{ '/services/' | relative_url }}" class="btn btn-primary btn-arrow">Explore Services</a>
+        <a href="{{ '/contact/' | relative_url }}" class="btn btn-outline">Contact Us</a>
       </div>
     </div>
   </div>
+  <a href="#mission" class="scroll-cue">Scroll</a>
 </section>
 
-<!-- INTRO STRIP -->
-<section class="intro-strip">
-  <div class="container">
-    <p>
-      Our mission is to <em>enhance property value</em> through strong tenant relationships, best operational practices, and sound accounting principles.
-    </p>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section class="section">
+<!-- MISSION -->
+<section class="section" id="mission">
   <div class="container two-col">
     <div>
-      <p class="section-label">About Englemount</p>
-      <h2 class="section-title">A trusted advisor for owners of real estate.</h2>
+      <p class="section-label dark">Our Mission</p>
+      <h2 class="section-title">Preserving property value—and meaningfully <em>enhancing</em> it.</h2>
     </div>
     <div>
-      <p style="font-size: 17px; color: var(--slate); margin-bottom: 20px;">
-        Englemount Real Estate Management Services provides conflict-free third-party real estate management and advisory services to investors, users, and owners of real estate. Our clients view us as a trusted advisor — bringing transparency, industry knowledge, and decades of hands-on experience to their portfolios.
+      <p style="font-size: 17px; color: var(--slate); line-height: 1.8; margin-bottom: 24px;">
+        Our clients view us as a trusted advisor, bringing transparency, industry knowledge and decades of hands-on experience to their portfolios. Our company was founded on the principles of <strong style="color: var(--navy);">integrity, intelligence and insight</strong>.
       </p>
-      <p style="font-size: 17px; color: var(--slate);">
-        At a fundamental level, property management companies are tasked with preserving property values. At Englemount, our mission is to <em>enhance</em> property value through strong tenant relationships, best operational practices, and sound accounting principles. The result is a superior occupancy environment for tenants and increased property values for our clients.
+      <p style="font-size: 17px; color: var(--slate); line-height: 1.8;">
+        At a fundamental level, property management companies are tasked with preserving property values. At Englemount, it is our mission to enhance property value through strong tenant relationships, best operational practices, and sound accounting principles. Our proactive approach provides investors with an effective mix of financial acumen and innovative value-creation.
       </p>
-      <div class="stats">
-        <div class="stat"><span class="stat-num">25+</span><span class="stat-label">Years industry experience</span></div>
-        <div class="stat"><span class="stat-num">24/7</span><span class="stat-label">Emergency service</span></div>
-        <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Conflict-free advisory</span></div>
-      </div>
     </div>
   </div>
 </section>
 
-<!-- FEATURES / SECTION LINKS -->
-<section class="section section-soft">
+<!-- STATS BAND -->
+<section class="stats-band">
   <div class="container">
-    <p class="section-label center">What We Do</p>
-    <h2 class="section-title center">Comprehensive real estate services.</h2>
-    <p class="section-lead center">
-      From day-to-day property management to receivership and sustainability advisory — tailored to fit the unique requirements of each client.
+    <div class="stats-grid">
+      <div class="stat"><span class="stat-num">25+</span><span class="stat-label">Years Industry Experience</span></div>
+      <div class="stat"><span class="stat-num">ICI</span><span class="stat-label">Sector Focus</span></div>
+      <div class="stat"><span class="stat-num">24/7</span><span class="stat-label">Emergency Service</span></div>
+      <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Conflict-Free Advisory</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTORS -->
+<section class="section section-cream">
+  <div class="container">
+    <p class="section-label dark">Sectors</p>
+    <h2 class="section-title">Tailored expertise across <em>commercial property</em>.</h2>
+    <p class="section-lead">
+      Whether your portfolio consists of industrial properties, office, retail, self-storage or medical, we tailor our property management engagement to meet your company's unique needs.
     </p>
 
-    <div class="features-grid">
-      <a href="{{ '/services/' | relative_url }}" class="feature-card">
-        <div class="icon">◆</div>
-        <h3>Management Services</h3>
-        <p>Physical management, accounting, project management, and receivership — tailored to your portfolio.</p>
-        <span class="arrow">Explore services →</span>
+    <div class="sectors-grid">
+      <a href="{{ '/properties/' | relative_url }}" class="sector-card">
+        <img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=1000&q=80&auto=format&fit=crop" alt="Industrial property" />
+        <div class="sector-meta">
+          <div class="label">Sector</div>
+          <h3>Industrial</h3>
+          <p>Logistics, warehousing & manufacturing</p>
+        </div>
       </a>
-      <a href="{{ '/esg/' | relative_url }}" class="feature-card">
-        <div class="icon">❋</div>
-        <h3>Sustainability & ESG</h3>
-        <p>Practical, measurable sustainability initiatives that balance environmental responsibility with financial performance.</p>
-        <span class="arrow">Our approach →</span>
+      <a href="{{ '/properties/' | relative_url }}" class="sector-card">
+        <img src="https://images.unsplash.com/photo-1604328698692-f76ea9498e76?w=1000&q=80&auto=format&fit=crop" alt="Commercial retail property" />
+        <div class="sector-meta">
+          <div class="label">Sector</div>
+          <h3>Commercial & Retail</h3>
+          <p>Mixed-use, retail & office buildings</p>
+        </div>
       </a>
-      <a href="{{ '/properties/' | relative_url }}" class="feature-card">
-        <div class="icon">▣</div>
-        <h3>Properties</h3>
-        <p>Commercial, industrial, retail, and medical properties we proudly manage across Ontario.</p>
-        <span class="arrow">View properties →</span>
-      </a>
-      <a href="{{ '/team/' | relative_url }}" class="feature-card">
-        <div class="icon">◉</div>
-        <h3>Leadership Team</h3>
-        <p>Decades of combined experience in property management, finance, and operations.</p>
-        <span class="arrow">Meet the team →</span>
-      </a>
-      <a href="{{ '/insights/' | relative_url }}" class="feature-card">
-        <div class="icon">✦</div>
-        <h3>Insights</h3>
-        <p>Market intelligence, best practices, and perspectives on the commercial real estate sector.</p>
-        <span class="arrow">Read insights →</span>
-      </a>
-      <a href="{{ '/contact/' | relative_url }}" class="feature-card">
-        <div class="icon">✉</div>
-        <h3>Get in Touch</h3>
-        <p>Discuss how Englemount can support your portfolio. We respond to every inquiry personally.</p>
-        <span class="arrow">Contact us →</span>
+      <a href="{{ '/properties/' | relative_url }}" class="sector-card">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1000&q=80&auto=format&fit=crop" alt="Office park" />
+        <div class="sector-meta">
+          <div class="label">Sector</div>
+          <h3>Office & Institutional</h3>
+          <p>Corporate campuses & medical</p>
+        </div>
       </a>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
-<section class="cta-band">
+<!-- CAPABILITIES (dark) -->
+<section class="section section-navy">
   <div class="container">
-    <h2>Ready to enhance your portfolio's value?</h2>
-    <p>Let's talk about how Englemount can support your real estate objectives.</p>
-    <a href="{{ '/contact/' | relative_url }}" class="btn btn-primary">Start the Conversation →</a>
+    <p class="section-label">Capabilities</p>
+    <h2 class="section-title">A full discipline of management, accounting and <em>advisory</em> services.</h2>
+
+    <div class="capabilities-grid">
+      <a href="{{ '/services/' | relative_url }}" class="capability">
+        <div class="num">01</div>
+        <h3>Property Management</h3>
+        <p>Physical management, project management, receivership and consulting tailored to each client.</p>
+        <span class="learn">Learn more</span>
+      </a>
+      <a href="{{ '/esg/' | relative_url }}" class="capability">
+        <div class="num">02</div>
+        <h3>ESG & Sustainability</h3>
+        <p>LEED management, cost-benefit analysis and forward-looking sustainability practice.</p>
+        <span class="learn">Learn more</span>
+      </a>
+      <a href="{{ '/team/' | relative_url }}" class="capability">
+        <div class="num">03</div>
+        <h3>Leadership</h3>
+        <p>A senior team with over 25 years of industry experience across Canadian markets.</p>
+        <span class="learn">Learn more</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT CTA -->
+<section class="section section-cream">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <p class="section-label dark">Get in Touch</p>
+        <h2 class="section-title">Ready to elevate the performance of your <em>portfolio</em>?</h2>
+        <p style="color: var(--slate); font-size: 17px; line-height: 1.7; margin-top: 24px; max-width: 540px;">
+          Speak with our team about tailoring a management engagement to your specific building, sector, and operational objectives.
+        </p>
+      </div>
+      <div class="contact-info-card">
+        <h4>Englemount Real Estate Management Services</h4>
+        <p>240 Chrislea Road, Suite 235</p>
+        <p>Vaughan, ON · Canada</p>
+        <div class="divider"></div>
+        <p><strong>Main</strong> <a href="tel:+14164413000">+1 416 441 3000</a></p>
+        <p><strong>Toll Free</strong> <a href="tel:+18004574124">+1 800 457 4124</a></p>
+        <div style="margin-top: 28px;">
+          <a href="{{ '/contact/' | relative_url }}" class="btn btn-dark btn-arrow">Contact Us</a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
