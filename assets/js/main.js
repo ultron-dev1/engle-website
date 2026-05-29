@@ -11,17 +11,13 @@ if (toggle) {
   );
 }
 
-// Scroll-based nav (sticky after scroll on hero pages)
-const isHome = document.body.dataset.page === 'home';
-let lastScroll = 0;
-window.addEventListener('scroll', () => {
-  const y = window.scrollY;
-  if (isHome) {
-    if (y > 100) nav.classList.add('scrolled');
-    else nav.classList.remove('scrolled');
-  }
-  lastScroll = y;
-}, { passive: true });
+// Nav background switches to opaque navy on scroll (all pages)
+const onScroll = () => {
+  if (window.scrollY > 80) nav.classList.add('scrolled');
+  else nav.classList.remove('scrolled');
+};
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
 
 // Scroll reveal
 const io = new IntersectionObserver((entries) => {
@@ -31,8 +27,8 @@ const io = new IntersectionObserver((entries) => {
       io.unobserve(e.target);
     }
   });
-}, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
 document.querySelectorAll(
-  '.section, .stats-band, .sector-card, .capability, .service-card, .team-card, .property-card, .post-card, .page-hero h1, .page-hero p'
+  '.section, .stats-band, .sector-card, .capability, .service-card, .team-card, .property-card, .post-card, .page-hero h1, .page-hero p, .article-body'
 ).forEach(el => { el.classList.add('reveal'); io.observe(el); });

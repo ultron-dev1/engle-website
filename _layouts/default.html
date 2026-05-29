@@ -14,15 +14,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}" />
 </head>
-<body>
+<body data-page="{{ page.nav | default: 'page' }}">
 
-<header class="nav {% unless page.nav == 'home' %}on-light{% endunless %}" id="nav">
+<header class="nav" id="nav">
   <div class="container nav-inner">
-    <a href="{{ '/' | relative_url }}" class="nav-brand">
-      <div>
-        <span class="nav-brand-mark">ENGLEMOUNT</span>
-        <span class="nav-brand-sub">Real Estate Management Services</span>
-      </div>
+    <a href="{{ '/' | relative_url }}" class="nav-logo" aria-label="Englemount home">
+      <img src="{{ '/assets/img/logo.svg' | relative_url }}" alt="Englemount Real Estate Management" />
     </a>
     <nav class="nav-links" aria-label="Primary">
       <a href="{{ '/services/' | relative_url }}" {% if page.nav == 'services' %}class="active"{% endif %}>Our Services</a>
@@ -48,9 +45,9 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="footer-brand-mark">ENGLEMOUNT</div>
-        <div class="footer-brand-sub">Real Estate Management Services</div>
+        <img src="{{ '/assets/img/logo.svg' | relative_url }}" alt="Englemount" class="footer-logo" />
         <p>Conflict-free third-party real estate management and advisory services for investors, users and owners of commercial property.</p>
+        <p style="margin-top:16px; font-size:11px; color:var(--gold); letter-spacing:0.2em; text-transform:uppercase;">Integrity · Intelligence · Insight</p>
       </div>
       <div>
         <h5>Explore</h5>
@@ -68,15 +65,15 @@
         <ul>
           <li>Englemount Real Estate Management Services Corp.</li>
           <li>240 Chrislea Road, Suite 235<br/>Vaughan, ON L4L 8V1 · Canada</li>
-          <li>Main <a href="tel:+14164413000">+1 416 441 3000</a></li>
-          <li>Fax +1 416 441 0300</li>
-          <li>Toll Free <a href="tel:+18004574124">+1 800 457 4124</a></li>
+          <li><strong style="color:#fff;">Main</strong> <a href="tel:+14164413000">+1 416 441 3000</a></li>
+          <li><strong style="color:#fff;">Fax</strong> +1 416 441 0300</li>
+          <li><strong style="color:#fff;">Toll Free</strong> <a href="tel:+18004574124">+1 800 457 4124</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 Englemount Real Estate Management Services Corp.</span>
-      <span>Integrity · Intelligence · Insight</span>
+      <span>All rights reserved.</span>
     </div>
   </div>
 </footer>
