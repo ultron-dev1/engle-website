@@ -1,0 +1,20 @@
+title: Englemount Real Estate Management Services
+description: Conflict-free third-party real estate management and advisory services for investors, users, and owners of real estate.
+url: ""
+baseurl: ""
+
+permalink: /:title/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+exclude:
+  - README.md
+  - .scrape-home.json
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules

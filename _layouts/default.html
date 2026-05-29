@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+<meta name="description" content="{{ page.description | default: site.description }}" />
+<meta property="og:title" content="{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}" />
+<meta property="og:description" content="{{ page.description | default: site.description }}" />
+<meta property="og:type" content="website" />
+<link rel="icon" type="image/svg+xml" href="{{ '/assets/img/logo.svg' | relative_url }}" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}" />
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="{{ '/' | relative_url }}" class="nav-logo" aria-label="Englemount home">
+      <img src="{{ '/assets/img/logo.svg' | relative_url }}" alt="Englemount Real Estate Management" />
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="{{ '/services/' | relative_url }}" {% if page.nav == 'services' %}class="active"{% endif %}>Our Services</a>
+      <a href="{{ '/esg/' | relative_url }}" {% if page.nav == 'esg' %}class="active"{% endif %}>ESG</a>
+      <a href="{{ '/team/' | relative_url }}" {% if page.nav == 'team' %}class="active"{% endif %}>Team</a>
+      <a href="{{ '/properties/' | relative_url }}" {% if page.nav == 'properties' %}class="active"{% endif %}>Properties</a>
+      <a href="{{ '/insights/' | relative_url }}" {% if page.nav == 'insights' %}class="active"{% endif %}>Insights</a>
+      <a href="{{ '/contact/' | relative_url }}" {% if page.nav == 'contact' %}class="active"{% endif %}>Contact</a>
+      <a href="https://www.impaksolutions.com/englemount/" target="_blank" rel="noopener" class="nav-cta">Tenant ↗</a>
+      <a href="https://englemount.moxtra.com/web/#/login" target="_blank" rel="noopener" class="nav-cta">Client ↗</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+{{ content }}
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="{{ '/assets/img/logo.svg' | relative_url }}" alt="Englemount" />
+        <p>Conflict-free third-party real estate management and advisory services. Founded on integrity, intelligence, and insight.</p>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="{{ '/services/' | relative_url }}">Services</a></li>
+          <li><a href="{{ '/esg/' | relative_url }}">ESG</a></li>
+          <li><a href="{{ '/team/' | relative_url }}">Team</a></li>
+          <li><a href="{{ '/properties/' | relative_url }}">Properties</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Resources</h5>
+        <ul>
+          <li><a href="{{ '/insights/' | relative_url }}">Insights</a></li>
+          <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+          <li><a href="https://www.impaksolutions.com/englemount/" target="_blank" rel="noopener">Tenant Portal ↗</a></li>
+          <li><a href="https://englemount.moxtra.com/web/#/login" target="_blank" rel="noopener">Client Portal ↗</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li>240 Chrislea Road, Suite 235<br/>Vaughan, ON L4L 8V1</li>
+          <li><a href="tel:+14164413000">+1 416 441 3000</a></li>
+          <li><a href="tel:+18004574124">+1 800 457 4124 (Toll Free)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Englemount Management Services Inc.</span>
+      <span>Property Management · Financial · Consulting Services</span>
+    </div>
+  </div>
+</footer>
+
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>
